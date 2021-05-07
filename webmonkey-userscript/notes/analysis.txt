@@ -1,0 +1,488 @@
+https://gem.cbc.ca/
+https://gem.cbc.ca/series/being-erica/3503afbf-1f80-4f8f-b26d-581082617c5a
+https://gem.cbc.ca/media/being-erica/season-2/episode-1/38e815a-00ad0e90d45
+
+// -----------------------------------------------------------------------------
+
+console.log(
+  JSON.stringify(
+    jwplayer().getConfig(), null, 2
+  )
+)
+
+// ------------------------------------- output:
+
+{
+  "autoPause": {
+    "viewability": false,
+    "pauseAds": false
+  },
+  "autostart": true,
+  "bandwidthEstimate": 8517513.882810194,
+  "bitrateSelection": null,
+  "castAvailable": false,
+  "controls": true,
+  "cues": [],
+  "defaultPlaybackRate": 1,
+  "displaydescription": true,
+  "displaytitle": true,
+  "displayPlaybackLabel": false,
+  "enableShortcuts": true,
+  "height": 360,
+  "intl": {},
+  "item": 0,
+  "language": "en",
+  "liveTimeout": null,
+  "localization": {
+    "advertising": {
+      "admessage": "This ad will end in xx",
+      "cuetext": "Advertisement",
+      "displayHeading": "Advertisement",
+      "loadingAd": "Loading ad",
+      "podmessage": "Ad __AD_POD_CURRENT__ of __AD_POD_LENGTH__.",
+      "skipmessage": "Skip ad in xx",
+      "skiptext": "Skip"
+    },
+    "airplay": "AirPlay",
+    "audioTracks": "Audio Tracks",
+    "auto": "Auto",
+    "buffer": "Loading",
+    "cast": "Chromecast",
+    "cc": "Closed Captions",
+    "close": "Close",
+    "errors": {
+      "badConnection": "This video cannot be played because of a problem with your internet connection.",
+      "cantLoadPlayer": "Sorry, the video player failed to load.",
+      "cantPlayInBrowser": "The video cannot be played in this browser.",
+      "cantPlayVideo": "This video file cannot be played.",
+      "errorCode": "Error Code",
+      "liveStreamDown": "The live stream is either down or has ended.",
+      "protectedContent": "There was a problem providing access to protected content.",
+      "technicalError": "This video cannot be played because of a technical error."
+    },
+    "exitFullscreen": "Exit Fullscreen",
+    "fullscreen": "Fullscreen",
+    "hd": "Quality",
+    "liveBroadcast": "Live",
+    "logo": "Logo",
+    "mute": "Mute",
+    "next": "Next",
+    "nextUp": "Next Episode",
+    "notLive": "Not Live",
+    "off": "Off",
+    "pause": "Pause",
+    "play": "Play",
+    "playback": "Play",
+    "playbackRates": "Playback Rates",
+    "player": "Video Player",
+    "poweredBy": "Powered by",
+    "prev": "Previous",
+    "related": {
+      "autoplaymessage": "Next up in xx",
+      "heading": "More Videos"
+    },
+    "replay": "Replay",
+    "rewind": "Rewind 10 Seconds",
+    "settings": "Settings",
+    "sharing": {
+      "copied": "Copied",
+      "email": "Email",
+      "embed": "Embed",
+      "heading": "Share",
+      "link": "Link"
+    },
+    "slider": "Seek",
+    "stop": "Stop",
+    "unmute": "Unmute",
+    "videoInfo": "About This Video",
+    "volume": "Volume",
+    "volumeSlider": "Volume",
+    "shortcuts": {
+      "playPause": "Play/Pause",
+      "volumeToggle": "Mute/Unmute",
+      "fullscreenToggle": "Fullscreen/Exit Fullscreen",
+      "seekPercent": "Seek %",
+      "keyboardShortcuts": "Keyboard Shortcuts",
+      "increaseVolume": "Increase Volume",
+      "decreaseVolume": "Decrease Volume",
+      "seekForward": "Seek Forward",
+      "seekBackward": "Seek Backward",
+      "spacebar": "SPACE",
+      "captionsToggle": "Captions On/Off"
+    },
+    "captionsStyles": {
+      "subtitleSettings": "Subtitle Settings",
+      "color": "Font Color",
+      "fontOpacity": "Font Opacity",
+      "userFontScale": "Font Size",
+      "fontFamily": "Font Family",
+      "edgeStyle": "Character Edge",
+      "backgroundColor": "Background Color",
+      "backgroundOpacity": "Background Opacity",
+      "windowColor": "Window Color",
+      "windowOpacity": "Window Opacity",
+      "white": "White",
+      "black": "Black",
+      "red": "Red",
+      "green": "Green",
+      "blue": "Blue",
+      "yellow": "Yellow",
+      "magenta": "Magenta",
+      "cyan": "Cyan",
+      "none": "None",
+      "raised": "Raised",
+      "depressed": "Depressed",
+      "uniform": "Uniform",
+      "dropShadow": "Drop Shadow"
+    },
+    "disabled": "Disabled",
+    "enabled": "Enabled",
+    "reset": "Reset"
+  },
+  "mute": false,
+  "nextUpDisplay": true,
+  "playbackRateControls": false,
+  "playbackRates": [
+    0.5,
+    1,
+    1.25,
+    1.5,
+    2
+  ],
+  "renderCaptionsNatively": false,
+  "repeat": false,
+  "stretching": "uniform",
+  "volume": 100,
+  "width": "100%",
+  "advertising": {
+    "companiondiv": {
+      "id": "companionAd-38e815a-00ad0e90d45",
+      "height": 250,
+      "width": 250
+    },
+    "vpaidcontrols": true,
+    "client": "googima"
+  },
+  "tracks": [
+    {
+      "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+      "kind": "thumbnails"
+    }
+  ],
+  "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+  "base": "/public/vendor/jwplayer/",
+  "skin": {
+    "url": "https://gem.cbc.ca/public/css/player.css",
+    "name": "cbc"
+  },
+  "type": "hls",
+  "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+  "aspectratio": "56.25%",
+  "playbackRate": 1,
+  "playlist": [
+    {
+      "sources": [
+        {
+          "default": false,
+          "type": "hls",
+          "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+          "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+          "tracks": [
+            {
+              "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+              "kind": "thumbnails"
+            }
+          ],
+          "label": "0",
+          "liveSyncDuration": 25,
+          "preload": "metadata"
+        }
+      ],
+      "tracks": [
+        {
+          "kind": "thumbnails",
+          "default": false,
+          "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31"
+        }
+      ],
+      "minDvrWindow": 120,
+      "dvrSeekLimit": 25,
+      "type": "hls",
+      "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+      "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+      "preload": "metadata",
+      "allSources": [
+        {
+          "default": false,
+          "type": "hls",
+          "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+          "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+          "tracks": [
+            {
+              "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+              "kind": "thumbnails"
+            }
+          ],
+          "label": "0",
+          "liveSyncDuration": 25,
+          "preload": "metadata"
+        }
+      ],
+      "feedData": {},
+      "liveSyncDuration": 25
+    }
+  ],
+  "liveSyncDuration": 25,
+  "backgroundLoading": true,
+  "key": "nWMkE+T3iTblsRVK1a+0lFxPvS1qn0382i1I7/QmD1LcgZ40",
+  "edition": "enterprise",
+  "error": null,
+  "generateSEOMetadata": false,
+  "flashplayer": "https://gem.cbc.ca/public/vendor/jwplayer/jwplayer.flash.swf",
+  "related": {
+    "disableRelated": true,
+    "showButton": true,
+    "oncomplete": "none",
+    "autoplaytimer": 0,
+    "shouldAutoAdvance": true
+  },
+  "plugins": {
+    "//ssl.p.jwpcdn.com/player/plugins/googima/v/8.8.4/googima.js": {
+      "companiondiv": {
+        "id": "companionAd-38e815a-00ad0e90d45",
+        "height": 250,
+        "width": 250
+      },
+      "vpaidcontrols": true
+    },
+    "//ssl.p.jwpcdn.com/player/v/8.17.7/jwpsrv.js": {}
+  },
+  "id": "jwplayer",
+  "setupConfig": {
+    "advertising": {
+      "companiondiv": {
+        "id": "companionAd-38e815a-00ad0e90d45",
+        "height": 250,
+        "width": 250
+      },
+      "vpaidcontrols": true,
+      "client": "googima"
+    },
+    "tracks": [
+      {
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+        "kind": "thumbnails"
+      }
+    ],
+    "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+    "base": "/public/vendor/jwplayer",
+    "skin": {
+      "url": "https://gem.cbc.ca/public/css/player.css",
+      "name": "cbc"
+    },
+    "type": "hls",
+    "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+    "autostart": true,
+    "aspectratio": "16:9",
+    "width": "100%",
+    "mute": false,
+    "localization": {
+      "nextUp": "Next Episode"
+    }
+  },
+  "audioMode": false,
+  "flashBlocked": false,
+  "itemMeta": {
+    "metadataType": "discontinuity",
+    "tag": "DISCONTINUITY",
+    "discontinuitySequence": 0,
+    "PTS": 900000,
+    "start": 0,
+    "end": 9.009
+  },
+  "playRejected": false,
+  "state": "paused",
+  "itemReady": true,
+  "controlsEnabled": true,
+  "feedData": {},
+  "playOnViewable": false,
+  "altText": "",
+  "fullscreen": false,
+  "logoWidth": 0,
+  "scrubbing": false,
+  "captions": {
+    "back": true,
+    "backgroundOpacity": 50,
+    "edgeStyle": null,
+    "fontSize": 14,
+    "fontOpacity": 100,
+    "fontScale": 0.05,
+    "windowOpacity": 0
+  },
+  "mediaContainer": {},
+  "iFrame": false,
+  "activeTab": true,
+  "touchMode": false,
+  "inDom": true,
+  "playlistItem": {
+    "sources": [
+      {
+        "default": false,
+        "type": "hls",
+        "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+        "tracks": [
+          {
+            "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+            "kind": "thumbnails"
+          }
+        ],
+        "label": "0",
+        "liveSyncDuration": 25,
+        "preload": "metadata"
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "thumbnails",
+        "default": false,
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31"
+      }
+    ],
+    "minDvrWindow": 120,
+    "dvrSeekLimit": 25,
+    "type": "hls",
+    "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+    "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+    "preload": "metadata",
+    "allSources": [
+      {
+        "default": false,
+        "type": "hls",
+        "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+        "tracks": [
+          {
+            "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+            "kind": "thumbnails"
+          }
+        ],
+        "label": "0",
+        "liveSyncDuration": 25,
+        "preload": "metadata"
+      }
+    ],
+    "feedData": {},
+    "liveSyncDuration": 25
+  },
+  "minDvrWindow": 120,
+  "dvrSeekLimit": 25,
+  "captionsIndex": 0,
+  "captionsList": [
+    {
+      "id": "off",
+      "label": "Off"
+    },
+    {
+      "id": "default",
+      "label": "English"
+    }
+  ],
+  "captionsTrack": null,
+  "mediaElement": {
+    "webkitWirelessVideoPlaybackDisabled": true
+  },
+  "provider": {
+    "name": "hlsjs"
+  },
+  "supportsPlaybackRate": true,
+  "containerWidth": 999,
+  "containerHeight": 562,
+  "visibility": 0.49,
+  "viewable": 0,
+  "intersectionRatio": 0.49,
+  "canAutoplay": "autoplayEnabled",
+  "playReason": "autostart",
+  "captionLabel": "Off",
+  "streamType": "VOD",
+  "autostartMuted": false,
+  "customButtons": [
+    {
+      "img": "<svg\n        class=\"next-icon\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        width=\"16\"\n        height=\"16\"\n        viewBox=\"0 0 16 16\"\n    >\n        <polygon points=\"0,0 13,8 0,16\" fill=\"#fff\" />\n        <rect x=\"13\" y=\"0\" width=\"3\" height=\"16\" fill=\"#fff\" />\n    </svg>",
+      "tooltip": "Next Episode",
+      "id": "next-icon-button"
+    }
+  ],
+  "pauseReason": "interaction",
+  "position": 4.739696,
+  "duration": 2583.8813000000036,
+  "buffer": 1.394646069848485,
+  "currentTime": 4.739696,
+  "instreamMode": false
+}
+
+// -----------------------------------------------------------------------------
+
+console.log(
+  JSON.stringify(
+    jwplayer().getPlaylist(), null, 2
+  )
+)
+
+// ------------------------------------- output:
+
+[
+  {
+    "sources": [
+      {
+        "default": false,
+        "type": "hls",
+        "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+        "tracks": [
+          {
+            "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+            "kind": "thumbnails"
+          }
+        ],
+        "label": "0",
+        "liveSyncDuration": 25,
+        "preload": "metadata"
+      }
+    ],
+    "tracks": [
+      {
+        "kind": "thumbnails",
+        "default": false,
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31"
+      }
+    ],
+    "minDvrWindow": 120,
+    "dvrSeekLimit": 25,
+    "type": "hls",
+    "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+    "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+    "preload": "metadata",
+    "allSources": [
+      {
+        "default": false,
+        "type": "hls",
+        "image": "https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg?impolicy=poster3x&imwidth=1600",
+        "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+        "tracks": [
+          {
+            "file": "https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261-TrickMode-320x180.vtt?cbcott=st=1620382608~exp=1620469008~acl=/*~hmac=bb42a886695d7cf761214a9a91934c865fa1b2eb4a09398250c0c6998da5eb31",
+            "kind": "thumbnails"
+          }
+        ],
+        "label": "0",
+        "liveSyncDuration": 25,
+        "preload": "metadata"
+      }
+    ],
+    "feedData": {},
+    "liveSyncDuration": 25
+  }
+]
+
+// -----------------------------------------------------------------------------
