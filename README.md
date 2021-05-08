@@ -12,6 +12,8 @@ Its purpose is to:
 * access restrictions:
   - a geo-fence requires that requests originate from an IP within Canada
   - login is required by most videos on the site
+    * userscript contains optional configuration fields to hold _username_ and _password_
+    * when configured, the script will automatically populate and submit the [login](https://gem.cbc.ca/login) form
   - _Referer_ request header is _not_ required by the video stream host
 
 #### Legal:

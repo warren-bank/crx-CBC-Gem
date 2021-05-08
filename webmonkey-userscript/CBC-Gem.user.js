@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CBC Gem
 // @description  Watch videos in external player.
-// @version      1.0.0
+// @version      1.1.0
 // @match        *://gem.cbc.ca/*
 // @match        *://*.gem.cbc.ca/*
 // @icon         https://gem.cbc.ca/favicon.png
@@ -24,6 +24,14 @@ var user_options = {
   "redirect_to_webcast_reloaded": true,
   "force_http":                   true,
   "force_https":                  false
+}
+
+var constants = {
+  "login": {
+    "username": "",
+    "password": "",
+    "ms_delay": 5000
+  }
 }
 
 // ----------------------------------------------------------------------------- state
@@ -179,9 +187,9 @@ var process_dash_url = function(dash_url, vtt_url, referer_url) {
   process_video_url(/* video_url= */ dash_url, /* video_type= */ 'application/dash+xml', vtt_url, referer_url)
 }
 
-// ----------------------------------------------------------------------------- process page
+// ----------------------------------------------------------------------------- process video page
 
-var process_page = function() {
+var process_video_page = function() {
   var the_player, playlist, playlist_item, source, video_url, video_type, track, vtt_url, referer_url
 
   if (
@@ -251,12 +259,52 @@ var process_page = function() {
   return false
 }
 
+// ----------------------------------------------------------------------------- process login page
+
+var process_login_page = function() {
+  var count = 0
+  var el
+  if (constants.login.username) {
+    el = unsafeWindow.document.querySelector('form.user-form input#username')
+    if (el) {
+      el.value = constants.login.username
+      el.dispatchEvent(new Event('blur'))
+      count++
+    }
+  }
+  if (constants.login.password) {
+    el = unsafeWindow.document.querySelector('form.user-form input#password')
+    if (el) {
+      el.value = constants.login.password
+      el.dispatchEvent(new Event('blur'))
+      count++
+    }
+  }
+  if (count === 2) {
+    el = unsafeWindow.document.querySelector('form.user-form button[type="submit"]')
+    if (el && !el.disabled) {
+      el.click()
+    }
+  }
+}
+
 // ----------------------------------------------------------------------------- bootstrap
 
-var init = function() {
+var init_login_page = function() {
+  if ('/login' !== unsafeWindow.location.pathname) return false
+
+  unsafeWindow.setTimeout(process_login_page, constants.login.ms_delay)
+  return true
+}
+
+var init_process_video_page = function() {
   unsafeWindow.window.onbeforeunload = clear_poll_window_timer
 
-  delay_poll_window(process_page, 0)
+  delay_poll_window(process_video_page, 0)
+}
+
+var init = function() {
+  init_login_page() || init_process_video_page()
 }
 
 init()
