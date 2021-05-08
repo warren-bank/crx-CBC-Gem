@@ -1,0 +1,10 @@
+var deviceId    = localStorage.getItem("deviceId")
+var deviceToken = localStorage.getItem("deviceToken")
+
+var headers = (deviceId && deviceToken)
+  ? {
+      "Access-Control-Request-Headers": "x-clearleap-deviceid,x-clearleap-devicetoken",
+      "X-Clearleap-DeviceId":           deviceId,
+      "X-Clearleap-DeviceToken":        deviceToken
+    }
+  : null

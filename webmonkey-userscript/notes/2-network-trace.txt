@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+
+https://gem.cbc.ca/media/being-erica/season-2/episode-1/38e815a-00ad0e90d45
+
+--------------------------------------------------------------------------------
+
+https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-00ad0e90d45?max=20&offset=0
+
+---------------------------------------- response:
+// filtered through xml pretty printer:
+//   https://riversun.github.io/xml-beautify/index.html
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/" version="2.0">
+  <channel>
+    <title>Being Dr. Tom</title>
+    <description>After Erica quits therapy, Dr. Naadiah sends her back to a bar in 1998, where she meets a younger, troubled Dr. Tom. A glimpse into his past and Erica realizes it is her turn to lend a helping hand.</description>
+    <guid>38e815a-00ad0e90d45</guid>
+    <clearleap:analyticsLabel>Being Dr. Tom</clearleap:analyticsLabel>
+    <language>en-us</language>
+    <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459157.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+    <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01_DEL1524631294855_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+    <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+    <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459158.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+    <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459159.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+    <ttl>180</ttl>
+    <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-00ad0e90d45</link>
+    <pubDate>Thu Sep 13 01:36:00 EDT 2018</pubDate>
+    <clearleap:totalResults>1</clearleap:totalResults>
+    <clearleap:paymentMethodRequired>false</clearleap:paymentMethodRequired>
+    <item>
+      <guid>38e815a-00ad0e90d45</guid>
+      <title>Being Dr. Tom</title>
+      <description>After Erica quits therapy, Dr. Naadiah sends her back to a bar in 1998, where she meets a younger, troubled Dr. Tom. A glimpse into his past and Erica realizes it is her turn to lend a helping hand.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s002e001</clearleap:titleSortName>
+      <clearleap:shortTitle>Being Dr. Tom</clearleap:shortTitle>
+      <houseId>302848</houseId>
+      <clearleap:episode>Being Dr. Tom</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>2</clearleap:season>
+      <clearleap:episodeInSeason>1</clearleap:episodeInSeason>
+      <clearleap:bookmark>0</clearleap:bookmark>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s002e001</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-00ad0e90d45&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Sebastian Pigott</media:credit>
+      <media:credit role="actor">Joanna Douglas</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Morgan Kelly</media:credit>
+      <media:credit role="releaseDate">2009-09-22T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-09-22T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2018-03-29 00:00:00" endDate="2018-04-10 12:00:59" />
+        <clearleap:availabilityWindow userEntitlement="CBC_MEMBER" startDate="2018-03-29 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=c27a9b06-f909-4dca-80bd-cde942f0b968&categoryId=2b1aed29-a789-4284-b012-f33307c7aaf7" type="video/mp4" duration="2583" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459157.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01_DEL1524631294855_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459160.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459158.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0e90d45/CBC_BEING_ERICA_SEASON_02_S02E01-v2-18459159.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-00ad0e90d45</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/2b1aed29-a789-4284-b012-f33307c7aaf7</clearleap:parentFolderUri>
+      <clearleap:parentGuid>2b1aed29-a789-4284-b012-f33307c7aaf7</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2551000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+  </channel>
+</rss>
+
+---------------------------------------- notes:
+
+* regex to extract URL that will contain HLS stream (after removing CR/LF):
+    /^.*?<media:content url=['"]([^'"]+)['"].*$/
+
+--------------------------------------------------------------------------------
+
+https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=c27a9b06-f909-4dca-80bd-cde942f0b968&categoryId=2b1aed29-a789-4284-b012-f33307c7aaf7
+
+---------------------------------------- response:
+// filtered through xml pretty printer:
+//   https://riversun.github.io/xml-beautify/index.html
+
+<result xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/" version="2.0">
+  <status>success</status>
+  <url>https://cbcvott-a.akamaihd.net/p//38e815a-00ad0e90d45//CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261/CBC_BEING_ERICA_SEASON_02_S02E01-v2-10427261__desktop.m3u8?cbcott=st=1620430901~exp=1620517301~acl=/*~hmac=53ea55216e633b77eac34c710013ca600734b09c02007b5ffb2671d17116ca2a</url>
+  <token>cbcott=st=1620430901~exp=1620517301~acl=/*~hmac=53ea55216e633b77eac34c710013ca600734b09c02007b5ffb2671d17116ca2a</token>
+  <clearleap:chainplayTimer>10</clearleap:chainplayTimer>
+  <clearleap:cuePoints>
+    <clearleap:cuePoint type="end_credits">2551000</clearleap:cuePoint>
+  </clearleap:cuePoints>
+  <rss version="2.0">
+    <channel>
+      <title>Battle Royale</title>
+      <description>A lover's quarrel between Erica and Ethan sends Erica back to camp, where discovering the truth about a broken teenage romance teaches her that the only sure path through conflict is communication.</description>
+      <guid>38e815a-00ad0dea50d</guid>
+      <clearleap:analyticsLabel>Battle Royale</clearleap:analyticsLabel>
+      <language>en-us</language>
+      <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459163.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+      <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459162.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+      <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02_DEL1524631294753_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+      <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459164.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+      <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459161.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      <ttl>180</ttl>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/client/web/browse/38e815a-00ad0dea50d</link>
+      <pubDate>Thu Sep 13 01:24:58 EDT 2018</pubDate>
+      <clearleap:totalResults>1</clearleap:totalResults>
+      <clearleap:paymentMethodRequired>false</clearleap:paymentMethodRequired>
+      <item>
+        <guid>38e815a-00ad0dea50d</guid>
+        <title>Battle Royale</title>
+        <description>A lover's quarrel between Erica and Ethan sends Erica back to camp, where discovering the truth about a broken teenage romance teaches her that the only sure path through conflict is communication.</description>
+        <media:keywords>drama</media:keywords>
+        <clearleap:titleSortName>s002e002</clearleap:titleSortName>
+        <clearleap:shortTitle>Battle Royale</clearleap:shortTitle>
+        <houseId>302849</houseId>
+        <clearleap:episode>Battle Royale</clearleap:episode>
+        <clearleap:series>Being Erica</clearleap:series>
+        <clearleap:season>2</clearleap:season>
+        <clearleap:episodeInSeason>2</clearleap:episodeInSeason>
+        <clearleap:bookmark>0</clearleap:bookmark>
+        <clearleap:tagline>
+          <position>Upper Left</position>
+          <color>#000000</color>
+        </clearleap:tagline>
+        <clearleap:analyticsLabel>s002e002</clearleap:analyticsLabel>
+        <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-00ad0dea50d&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+        <media:credit role="actor">Erin Karpluk</media:credit>
+        <media:credit role="actor">Michael Riley</media:credit>
+        <media:credit role="actor">Sebastian Pigott</media:credit>
+        <media:credit role="actor">Joanna Douglas</media:credit>
+        <media:credit role="actor">Reagan Pasternak</media:credit>
+        <media:credit role="actor">Morgan Kelly</media:credit>
+        <media:credit role="releaseDate">2009-09-29T00:00:00</media:credit>
+        <media:credit role="year">2009</media:credit>
+        <clearleap:itemType>media</clearleap:itemType>
+        <media:price type="RENTAL" price="0.00" currency="USD" />
+        <media:status status="ACTIVE" />
+        <dcterms:available>start=2009-09-29T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+        <dcterms:accessRights>STANDARD</dcterms:accessRights>
+        <media:rating scheme="urn:other">14A</media:rating>
+        <media:group>
+          <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=dccccd67-4ebd-41b6-84e9-1d976cc456a8&categoryId=2b1aed29-a789-4284-b012-f33307c7aaf7" type="video/mp4" duration="2658" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+          <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459163.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+          <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459162.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+          <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02_DEL1524631294753_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+          <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459164.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+          <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-00ad0dea50d/CBC_BEING_ERICA_SEASON_02_S02E02-v2-18459161.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        </media:group>
+        <link>https://api-cbc.cloud.clearleap.com/cloffice/client/web/browse/38e815a-00ad0dea50d</link>
+        <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/client/web/browse/2b1aed29-a789-4284-b012-f33307c7aaf7</clearleap:parentFolderUri>
+        <clearleap:parentGuid>2b1aed29-a789-4284-b012-f33307c7aaf7</clearleap:parentGuid>
+      </item>
+    </channel>
+  </rss>
+</result>
+
+---------------------------------------- notes:
+
+* regex to extract HLS stream (after removing CR/LF):
+    /^.*?<url>(.+?)<\/url>.*$/
+
+--------------------------------------------------------------------------------

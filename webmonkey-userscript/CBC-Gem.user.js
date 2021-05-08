@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CBC Gem
 // @description  Watch videos in external player.
-// @version      1.1.0
+// @version      2.0.0
 // @match        *://gem.cbc.ca/*
 // @match        *://*.gem.cbc.ca/*
 // @icon         https://gem.cbc.ca/favicon.png
@@ -18,9 +18,6 @@
 // ----------------------------------------------------------------------------- constants
 
 var user_options = {
-  "poll_window_interval_ms":        500,
-  "poll_window_timeout_ms":       30000,
-
   "redirect_to_webcast_reloaded": true,
   "force_http":                   true,
   "force_https":                  false
@@ -32,59 +29,6 @@ var constants = {
     "password": "",
     "ms_delay": 5000
   }
-}
-
-// ----------------------------------------------------------------------------- state
-
-var state = {
-  "poll_window_timer":            0
-}
-
-// ----------------------------------------------------------------------------- retry until success or timeout occurs
-
-var max_poll_window_attempts = Math.ceil(user_options.poll_window_timeout_ms / user_options.poll_window_interval_ms)
-
-var clear_poll_window_timer = function() {
-  if (!state.poll_window_timer) return
-
-  unsafeWindow.clearTimeout(state.poll_window_timer)
-  state.poll_window_timer = 0
-}
-
-var poll_window = function(process_window, count_poll_window_attempts) {
-  if (!count_poll_window_attempts)
-    count_poll_window_attempts = 0
-
-  count_poll_window_attempts++
-
-  if (count_poll_window_attempts <= max_poll_window_attempts) {
-    if (!process_window()) {
-      state.poll_window_timer = unsafeWindow.setTimeout(
-        function() {
-          clear_poll_window_timer()
-
-          poll_window(process_window, count_poll_window_attempts)
-        },
-        user_options.poll_window_interval_ms
-      )
-    }
-  }
-}
-
-var delay_poll_window = function(process_window, delay_ms) {
-  clear_poll_window_timer()
-
-  if (!delay_ms)
-    delay_ms = 0
-
-  state.poll_window_timer = unsafeWindow.setTimeout(
-    function() {
-      clear_poll_window_timer()
-
-      poll_window(process_window)
-    },
-    delay_ms
-  )
 }
 
 // ----------------------------------------------------------------------------- URL links to tools on Webcast Reloaded website
@@ -120,8 +64,6 @@ var get_webcast_reloaded_url = function(video_url, vtt_url, referer_url, force_h
 // ----------------------------------------------------------------------------- URL redirect
 
 var redirect_to_url = function(url) {
-  clear_poll_window_timer()
-
   if (!url) return
 
   if (typeof GM_loadUrl === 'function') {
@@ -141,8 +83,6 @@ var redirect_to_url = function(url) {
 }
 
 var process_video_url = function(video_url, video_type, vtt_url, referer_url) {
-  clear_poll_window_timer()
-
   if (!referer_url)
     referer_url = unsafeWindow.location.href
 
@@ -187,76 +127,72 @@ var process_dash_url = function(dash_url, vtt_url, referer_url) {
   process_video_url(/* video_url= */ dash_url, /* video_type= */ 'application/dash+xml', vtt_url, referer_url)
 }
 
-// ----------------------------------------------------------------------------- process video page
+// ----------------------------------------------------------------------------- helpers
 
-var process_video_page = function() {
-  var the_player, playlist, playlist_item, source, video_url, video_type, track, vtt_url, referer_url
+// make GET request, pass plaintext response to callback
+var download_text = function(url, headers, callback) {
+  var xhr = new unsafeWindow.XMLHttpRequest()
+  xhr.open("GET", url, true, null, null)
 
-  if (
-       unsafeWindow.jwplayer
-    && ('function' === (typeof unsafeWindow.jwplayer))
-  ) {
-    // process jwplayer playlist sources
+  if (headers && (typeof headers === 'object')) {
+    var keys = Object.keys(headers)
+    var key, val
+    for (var i=0; i < keys.length; i++) {
+      key = keys[i]
+      val = headers[key]
+      xhr.setRequestHeader(key, val)
+    }
+  }
 
-    the_player = unsafeWindow.jwplayer()
-
-    if (
-         the_player
-      && ('object'   === (typeof the_player))
-      && ('function' === (typeof the_player.getPlaylist))
-    ) {
-      playlist = the_player.getPlaylist()
-
-      if (playlist && Array.isArray(playlist) && playlist.length) {
-        for (var i=0; !video_url && (i < playlist.length); i++) {
-          playlist_item = playlist[i]
-
-          if (playlist_item && ('object' === (typeof playlist_item)) && playlist_item.sources && Array.isArray(playlist_item.sources) && playlist_item.sources.length) {
-            for (var i2=0; !video_url && (i2 < playlist_item.sources.length); i2++) {
-              source = playlist_item.sources[i2]
-
-              if (!source.file) continue
-
-              switch(source.type) {
-                case "hls":
-                  video_url  = source.file + '#video.m3u8'
-                  video_type = 'application/x-mpegurl'
-                  break
-                case "dash":
-                  video_url  = source.file + '#video.ism'
-                  video_type = 'application/dash+xml'
-                  break
-                default:
-                  video_url  = source.file + ((source.type) ? ('#video.' + source.type) : '')
-                  video_type = (source.type) ? ('video/' + source.type) : null
-                  break
-              }
-
-              if (source.tracks && Array.isArray(source.tracks) && source.tracks.length) {
-                for (var i3=0; i3 < source.tracks.length; i3++) {
-                  track = source.tracks[i3]
-
-                  if (track && ('object' === (typeof track)) && track.file) {
-                    vtt_url = track.file
-                    break
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      if (video_url) {
-        referer_url = unsafeWindow.location.href
-        process_video_url(video_url, video_type, vtt_url, referer_url)
-        return true
+  xhr.onload = function(e) {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        callback(xhr.responseText)
       }
     }
   }
 
-  // retry after delay
-  return false
+  xhr.send()
+}
+
+// ----------------------------------------------------------------------------- process video page
+
+var process_video_page = function(page_id) {
+  var url_browse      = 'https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/' + page_id + '?max=20&offset=0'
+  var headers_browse  = null
+  var callback_browse = function(xml_browse) {
+    if (!xml_browse) return
+    xml_browse = xml_browse.replace(/[\t\r\n]+/g, ' ')
+
+    var regex_browse = /^.*?<media:content url=['"]([^'"]+)['"].*$/
+    if (!regex_browse.test(xml_browse)) return
+
+    var url_play     = xml_browse.replace(regex_browse, '$1')
+    var deviceId     = localStorage.getItem("deviceId")
+    var deviceToken  = localStorage.getItem("deviceToken")
+    var headers_play = (deviceId && deviceToken)
+      ? {
+          "Access-Control-Request-Headers": "x-clearleap-deviceid,x-clearleap-devicetoken",
+          "X-Clearleap-DeviceId":           deviceId,
+          "X-Clearleap-DeviceToken":        deviceToken
+        }
+      : null
+
+    var callback_play = function(xml_play) {
+      if (!xml_play) return
+      xml_play = xml_play.replace(/[\t\r\n]+/g, ' ')
+
+      var regex_play = /^.*?<url>(.+?)<\/url>.*$/
+      if (!regex_play.test(xml_play)) return
+
+      var hls_url = xml_play.replace(regex_play, '$1')
+      process_hls_url(hls_url)
+    }
+
+    download_text(url_play, headers_play, callback_play)
+  }
+
+  download_text(url_browse, headers_browse, callback_browse)
 }
 
 // ----------------------------------------------------------------------------- process login page
@@ -297,14 +233,18 @@ var init_login_page = function() {
   return true
 }
 
-var init_process_video_page = function() {
-  unsafeWindow.window.onbeforeunload = clear_poll_window_timer
+var init_video_page = function() {
+  var pathname = unsafeWindow.location.pathname
+  if (!pathname) return
 
-  delay_poll_window(process_video_page, 0)
+  var page_id = pathname.substr(pathname.lastIndexOf('/') + 1)
+  if (!page_id) return
+
+  process_video_page(page_id)
 }
 
 var init = function() {
-  init_login_page() || init_process_video_page()
+  init_login_page() || init_video_page()
 }
 
 init()
