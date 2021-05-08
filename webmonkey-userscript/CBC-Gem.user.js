@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CBC Gem
 // @description  Watch videos in external player.
-// @version      2.0.0
+// @version      2.0.1
 // @match        *://gem.cbc.ca/*
 // @match        *://*.gem.cbc.ca/*
 // @icon         https://gem.cbc.ca/favicon.png
@@ -226,6 +226,17 @@ var process_login_page = function() {
 
 // ----------------------------------------------------------------------------- bootstrap
 
+var intercept_history_redirects = function() {
+  var interceptor = function(state, title, url) {
+    redirect_to_url(url)
+  }
+
+  if (unsafeWindow.history) {
+    unsafeWindow.history.pushState    = interceptor
+    unsafeWindow.history.replaceState = interceptor
+  }
+}
+
 var init_login_page = function() {
   if ('/login' !== unsafeWindow.location.pathname) return false
 
@@ -244,6 +255,10 @@ var init_video_page = function() {
 }
 
 var init = function() {
+  if ((typeof GM_getUrl === 'function') && (GM_getUrl() !== unsafeWindow.location.href)) return
+
+  intercept_history_redirects()
+
   init_login_page() || init_video_page()
 }
 
