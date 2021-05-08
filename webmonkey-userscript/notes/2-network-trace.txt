@@ -1,8 +1,683 @@
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- VOD: metadata for season in series
+
+https://gem.cbc.ca/series/being-erica/3503afbf-1f80-4f8f-b26d-581082617c5a
+  redirects to..
+
+https://gem.cbc.ca/season/being-erica/season-1/9536e9fb-84f4-4637-afa3-3500b05f3dc3
+
+https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3?max=20&offset=0
+
+---------------------------------------- response:
+// filtered through xml pretty printer:
+//   https://riversun.github.io/xml-beautify/index.html
+
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/" version="2.0">
+  <channel>
+    <title>Season 1</title>
+    <description>BEING ERICA is a funny and magical comedy/drama series where the classic fantasy of revisiting the past offers 30-something year old Erica Strange a chance to come to terms with her choices in life.</description>
+    <guid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</guid>
+    <media:keywords>season</media:keywords>
+    <category>Shows/All/Being Erica/Season 1</category>
+    <clearleap:analyticsLabel>Season 1</clearleap:analyticsLabel>
+    <language>en-us</language>
+    <media:thumbnail url="https://i.watch.cbc.ca/p/categoryThumbnails/acd4afd8-83b0-4743-8333-a236d7d55bcd.jpg" profile="CBC-CAROUSEL-3X" width="5160" height="2160" />
+    <ttl>180</ttl>
+    <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/3503afbf-1f80-4f8f-b26d-581082617c5a</link>
+    <clearleap:parentGuid>3503afbf-1f80-4f8f-b26d-581082617c5a</clearleap:parentGuid>
+    <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/3503afbf-1f80-4f8f-b26d-581082617c5a</clearleap:parentFolderUri>
+    <pubDate>Sat May 08 03:12:36 EDT 2021</pubDate>
+    <clearleap:totalResults>13</clearleap:totalResults>
+    <clearleap:paymentMethodRequired>false</clearleap:paymentMethodRequired>
+    <item>
+      <guid>38e815a-009d46e060f</guid>
+      <title>Dr. Tom (Pilot)</title>
+      <description>Down and out, Erica Strange is desperate to change her life and takes up an offer from a mysterious therapist, Dr. Tom, who sends her back in time to relive a notable high school regret.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e001</clearleap:titleSortName>
+      <clearleap:shortTitle>Dr. Tom (Pilot)</clearleap:shortTitle>
+      <houseId>244885</houseId>
+      <clearleap:episode>Dr. Tom (Pilot)</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>1</clearleap:episodeInSeason>
+      <clearleap:bookmark>9</clearleap:bookmark>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e001</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d46e060f&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-01-05T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-01-05T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-01-05 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=d158320f-cb3d-4bb7-91e9-8aee19f0d296&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2695" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d46e060f/CBC_BEING_ERICA_SEASON_01_S01E01-v1-18458958.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d46e060f/CBC_BEING_ERICA_SEASON_01_S01E01-v1-18458957.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d46e060f/CBC_BEING_ERICA_SEASON_01_S01E01_DEL1524631297077_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d46e060f/CBC_BEING_ERICA_SEASON_01_S01E01-v1-18458961.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d46e060f/CBC_BEING_ERICA_SEASON_01_S01E01-v1-18458959.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d46e060f</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2582000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d558ef34</guid>
+      <title>What I Am is What I Am</title>
+      <description>Erica settles for a dead-end job that can pay the bills. She is sent back to her university days to join an exclusive secret society with hope that doing so will finally set her onto the right path.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e002</clearleap:titleSortName>
+      <clearleap:shortTitle>What I Am is What I</clearleap:shortTitle>
+      <houseId>244886</houseId>
+      <clearleap:episode>What I Am is What I Am</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>2</clearleap:episodeInSeason>
+      <clearleap:bookmark>0</clearleap:bookmark>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e002</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d558ef34&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-01-12T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-01-12T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-01-12 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=ebea67b3-3f78-412c-9f4d-98f363995e9a&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2611" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d558ef34/CBC_BEING_ERICA_SEASON_01_S01E02_DEL1524631296965_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d558ef34/CBC_BEING_ERICA_SEASON_01_S01E02-v1-18458967.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d558ef34/CBC_BEING_ERICA_SEASON_01_S01E02-v1-18458966.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d558ef34/CBC_BEING_ERICA_SEASON_01_S01E02-v1-18458968.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d558ef34/CBC_BEING_ERICA_SEASON_01_S01E02-v1-18458969.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d558ef34</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2630000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d4e057b3</guid>
+      <title>Plenty of Fish</title>
+      <description>Eternally-single Erica brings best friend Ethan to pose as her boyfriend at her high school reunion. She begins to understand the source of her relationship troubles with men.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e003</clearleap:titleSortName>
+      <clearleap:shortTitle>Plenty of Fish</clearleap:shortTitle>
+      <houseId>244887</houseId>
+      <clearleap:episode>Plenty of Fish</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>3</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e003</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d4e057b3&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-01-19T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-01-19T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-01-19 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=fbed3a63-6753-427f-aedc-59a2271a64f8&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2644" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4e057b3/CBC_BEING_ERICA_SEASON_01_S01E03-v1-18458974.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4e057b3/CBC_BEING_ERICA_SEASON_01_S01E03-v1-18458976.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4e057b3/CBC_BEING_ERICA_SEASON_01_S01E03_DEL1524631296856_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4e057b3/CBC_BEING_ERICA_SEASON_01_S01E03-v1-18458975.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4e057b3/CBC_BEING_ERICA_SEASON_01_S01E03-v1-18458973.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d4e057b3</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2551000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d4d42406</guid>
+      <title>The Secret of Now</title>
+      <description>In order to conquer her fear of confrontation with her new "bully" boss, Erica is sent back to her first semester of university where she learns to finally stand up to Professor Lozar.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e004</clearleap:titleSortName>
+      <clearleap:shortTitle>The Secret of Now</clearleap:shortTitle>
+      <houseId>244888</houseId>
+      <clearleap:episode>The Secret of Now</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>4</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e004</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d4d42406&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-01-26T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-01-26T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-01-26 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=45231870-bd53-40f5-824c-0bfdf70eea24&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2654" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4d42406/CBC_BEING_ERICA_SEASON_01_S01E04-v1-18459010.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4d42406/CBC_BEING_ERICA_SEASON_01_S01E04-v1-18459012.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4d42406/CBC_BEING_ERICA_SEASON_01_S01E04-v1-18459011.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4d42406/CBC_BEING_ERICA_SEASON_01_S01E04_DEL1524631296780_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4d42406/CBC_BEING_ERICA_SEASON_01_S01E04-v1-18459013.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d4d42406</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2621000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d3c70862</guid>
+      <title>Adultescence</title>
+      <description>Tired of being treated like a child, Erica confronts the source of her reputation by returning to her Bat Mitzvah only this time she will prove herself as a woman.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e005</clearleap:titleSortName>
+      <clearleap:shortTitle>Adultescence</clearleap:shortTitle>
+      <houseId>244889</houseId>
+      <clearleap:episode>Adultescence</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>5</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e005</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d3c70862&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-02-02T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-02-02T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-02-02 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=0dbd7d87-193a-40c5-8c12-384d2d826542&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2656" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d3c70862/CBC_BEING_ERICA_SEASON_01_S01E05-v1-18459030.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d3c70862/CBC_BEING_ERICA_SEASON_01_S01E05_DEL1524631296706_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d3c70862/CBC_BEING_ERICA_SEASON_01_S01E05-v1-18459029.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d3c70862/CBC_BEING_ERICA_SEASON_01_S01E05-v1-18459028.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d3c70862/CBC_BEING_ERICA_SEASON_01_S01E05-v1-18459027.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d3c70862</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2655000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d5463dcb</guid>
+      <title>Til Death</title>
+      <description>Erica is worried that her sister Samantha is marrying the wrong man.  When she goes back to prevent Sam and Josh from getting together, Erica learns a secret that threatens her relationship with Sam.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e006</clearleap:titleSortName>
+      <clearleap:shortTitle>Til Death</clearleap:shortTitle>
+      <houseId>244890</houseId>
+      <clearleap:episode>Til Death</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>6</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e006</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d5463dcb&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-02-11T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-02-11T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-02-11 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=b5c4be05-a326-4e29-9eee-72a55f3c8b1d&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2663" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5463dcb/CBC_BEING_ERICA_SEASON_01_S01E06-v1-18459080.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5463dcb/CBC_BEING_ERICA_SEASON_01_S01E06-v1-18459082.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5463dcb/CBC_BEING_ERICA_SEASON_01_S01E06-v1-18459081.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5463dcb/CBC_BEING_ERICA_SEASON_01_S01E06_DEL1524631296595_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5463dcb/CBC_BEING_ERICA_SEASON_01_S01E06-v1-18459079.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d5463dcb</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2570000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d4acf1e1</guid>
+      <title>Such a Perfect Day</title>
+      <description>With the stress of work and family life weighing heavily on Erica's shoulders, Dr. Tom decides to give her a break and sends Erica back to a "perfect day."</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e007</clearleap:titleSortName>
+      <clearleap:shortTitle>Such a Perfect Day</clearleap:shortTitle>
+      <houseId>244891</houseId>
+      <clearleap:episode>Such a Perfect Day</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>7</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e007</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d4acf1e1&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-02-18T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-02-18T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-02-18 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=b37b4333-5d25-4204-ac96-7106a858b7c2&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2621" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4acf1e1/CBC_BEING_ERICA_SEASON_01_S01E07-v1-18459087.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4acf1e1/CBC_BEING_ERICA_SEASON_01_S01E07_DEL1524631296469_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4acf1e1/CBC_BEING_ERICA_SEASON_01_S01E07-v1-18459086.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4acf1e1/CBC_BEING_ERICA_SEASON_01_S01E07-v1-18459085.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4acf1e1/CBC_BEING_ERICA_SEASON_01_S01E07-v1-18459084.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d4acf1e1</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2588000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d413a5ab</guid>
+      <title>This Be The Verse</title>
+      <description>Erica's long-simmering relationship with her mother reaches a boiling point. Going back into the distant past, opens up Erica's eyes to who Barbara Strange really is.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e008</clearleap:titleSortName>
+      <clearleap:shortTitle>This Be The Verse</clearleap:shortTitle>
+      <houseId>244892</houseId>
+      <clearleap:episode>This Be The Verse</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>8</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e008</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d413a5ab&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-02-25T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-02-25T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-02-25 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=4bfd5a26-2d80-43b3-b53a-31335e8fe50e&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2674" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d413a5ab/CBC_BEING_ERICA_SEASON_01_S01E08-v1-18459089.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d413a5ab/CBC_BEING_ERICA_SEASON_01_S01E08-v1-18459090.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d413a5ab/CBC_BEING_ERICA_SEASON_01_S01E08_DEL1524631296376_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d413a5ab/CBC_BEING_ERICA_SEASON_01_S01E08-v1-18459091.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d413a5ab/CBC_BEING_ERICA_SEASON_01_S01E08-v1-18459088.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d413a5ab</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2611000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d5472dea</guid>
+      <title>Everything She Wants</title>
+      <description>Erica explores her feelings for Ryan by reliving an unusual love affair from her university days.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e009</clearleap:titleSortName>
+      <clearleap:shortTitle>Everything She Want</clearleap:shortTitle>
+      <houseId>244893</houseId>
+      <clearleap:episode>Everything She Wants</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>9</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e009</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d5472dea&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-03-04T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-03-04T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-03-04 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=6ab73181-0894-44ff-9664-36e9ce08d771&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2669" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5472dea/CBC_BEING_ERICA_SEASON_01_S01E09-v1-18459092.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5472dea/CBC_BEING_ERICA_SEASON_01_S01E09_DEL1524631296323_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5472dea/CBC_BEING_ERICA_SEASON_01_S01E09-v1-18459094.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5472dea/CBC_BEING_ERICA_SEASON_01_S01E09-v1-18459095.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d5472dea/CBC_BEING_ERICA_SEASON_01_S01E09-v1-18459093.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d5472dea</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2635000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d56b41d8</guid>
+      <title>Mi Casa, Su Casa Loma</title>
+      <description>Erica's "friendship" with Katie reaches a new low when Katie manoeuvres her way into a book deal with River Rock.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e010</clearleap:titleSortName>
+      <clearleap:shortTitle>Mi Casa, Su Casa Lo</clearleap:shortTitle>
+      <houseId>244894</houseId>
+      <clearleap:episode>Mi Casa, Su Casa Loma</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>10</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e010</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d56b41d8&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-03-11T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-03-11T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-03-11 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=357858fe-6941-4bd4-a0d2-2ff0f79a3889&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2660" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d56b41d8/CBC_BEING_ERICA_SEASON_01_S01E10-v1-18459097.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d56b41d8/CBC_BEING_ERICA_SEASON_01_S01E10-v1-18459098.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d56b41d8/CBC_BEING_ERICA_SEASON_01_S01E10-v1-18459096.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d56b41d8/CBC_BEING_ERICA_SEASON_01_S01E10_DEL1524631296202_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d56b41d8/CBC_BEING_ERICA_SEASON_01_S01E10-v1-18459099.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d56b41d8</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2626000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d4802f50</guid>
+      <title>She's Lost Control</title>
+      <description>Charged with supervising the launch of Katie's book, Erica turns into a control-freak. She soon realizes that her need to control might be contributing to the downfall of her relationship with Ethan.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e011</clearleap:titleSortName>
+      <clearleap:shortTitle>She's Lost Control</clearleap:shortTitle>
+      <houseId>244895</houseId>
+      <clearleap:episode>She's Lost Control</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>11</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e011</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d4802f50&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-03-18T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-03-18T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-03-18 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=fd9ab8c6-1457-4391-8cae-7c7425f55e22&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2663" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4802f50/CBC_BEING_ERICA_SEASON_01_S01E11_DEL1524631296084_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4802f50/CBC_BEING_ERICA_SEASON_01_S01E11-v1-18459102.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4802f50/CBC_BEING_ERICA_SEASON_01_S01E11-v1-18459101.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4802f50/CBC_BEING_ERICA_SEASON_01_S01E11-v1-18459103.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d4802f50/CBC_BEING_ERICA_SEASON_01_S01E11-v1-18459100.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d4802f50</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2630000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d9e54547</guid>
+      <title>Erica the Vampire Slayer</title>
+      <description>Unnerved in her new position at River Rock Publishing, Erica must learn to step outside her shell, challenge her inhibitions, and learn that her abilities are not nearly as confined as she believed.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e012</clearleap:titleSortName>
+      <clearleap:shortTitle>Erica the Vampire S</clearleap:shortTitle>
+      <houseId>244896</houseId>
+      <clearleap:episode>Erica the Vampire Slayer</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>12</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e012</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d9e54547&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-03-25T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-03-25T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-03-25 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=70193e1b-45be-4f71-a595-acac9b6a7dbb&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2660" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9e54547/CBC_BEING_ERICA_SEASON_01_S01E12-v1-18459105.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9e54547/CBC_BEING_ERICA_SEASON_01_S01E12_DEL1524631295982_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9e54547/CBC_BEING_ERICA_SEASON_01_S01E12-v1-18459107.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9e54547/CBC_BEING_ERICA_SEASON_01_S01E12-v1-18459104.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9e54547/CBC_BEING_ERICA_SEASON_01_S01E12-v1-18459106.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d9e54547</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2567000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+    <item>
+      <guid>38e815a-009d9df1ce0</guid>
+      <title>Leo</title>
+      <description>Erica returns to her greatest regret, her brother Leo's death, only to discover the hard way that there are consequences to playing God.</description>
+      <media:keywords>drama</media:keywords>
+      <clearleap:titleSortName>s001e013</clearleap:titleSortName>
+      <clearleap:shortTitle>Leo</clearleap:shortTitle>
+      <houseId>244897</houseId>
+      <clearleap:episode>Leo</clearleap:episode>
+      <clearleap:series>Being Erica</clearleap:series>
+      <clearleap:season>1</clearleap:season>
+      <clearleap:episodeInSeason>13</clearleap:episodeInSeason>
+      <clearleap:tagline>
+        <position>Upper Left</position>
+        <color>#000000</color>
+      </clearleap:tagline>
+      <clearleap:analyticsLabel>s001e013</clearleap:analyticsLabel>
+      <clearleap:ads xmlns:clearleap="http://www.clearleap.com/namespace/clearleap/1.0/">https://pubads.g.doubleclick.net/gampad/ads?env=vp&gdfp_req=1&unviewed_position_start=1&correlator={correlator}&output=xml_vast&iu=entertainment/shows/beingerica&sz=320x240&url={url}&ad_rule=1&pp=ott-default&cmsid=2459428&hl=en&vid=38e815a-009d9df1ce0&label=viewable_impression&bu=gem&cust_params=env%3Davod&{ciu_sizes}</clearleap:ads>
+      <media:credit role="actor">Erin Karpluk</media:credit>
+      <media:credit role="actor">Michael Riley</media:credit>
+      <media:credit role="actor">Tyron Leitso</media:credit>
+      <media:credit role="actor">Reagan Pasternak</media:credit>
+      <media:credit role="actor">Devon Bostick</media:credit>
+      <media:credit role="releaseDate">2009-04-01T00:00:00</media:credit>
+      <media:credit role="year">2009</media:credit>
+      <clearleap:itemType>media</clearleap:itemType>
+      <media:price type="RENTAL" price="0.00" currency="USD" />
+      <media:status status="ACTIVE" />
+      <dcterms:available>start=2009-04-01T00:00:00;new=0d;end=2021-09-25T23:59:59;lastChance=0d;scheme:W3C-DTF</dcterms:available>
+      <dcterms:accessRights>STANDARD</dcterms:accessRights>
+      <clearleap:availabilityWindows>
+        <clearleap:availabilityWindow userEntitlement="CBC_STANDARD" startDate="2009-04-01 00:00:00" endDate="2021-09-25 23:59:59" />
+      </clearleap:availabilityWindows>
+      <media:rating scheme="urn:other">14A</media:rating>
+      <media:group>
+        <media:content url="https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=193bd6db-cc6e-4a27-b64e-4a384bc8bfc8&categoryId=9536e9fb-84f4-4637-afa3-3500b05f3dc3" type="video/mp4" duration="2655" medium="video" isDefault="false" expression="full" profile="CBC-HLS-ZIP" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9df1ce0/CBC_BEING_ERICA_SEASON_01_S01E13-v1-18459111.jpg" profile="CBC-THUMBNAIL-1X" width="224" height="126" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9df1ce0/CBC_BEING_ERICA_SEASON_01_S01E13-v1-18459110.jpg" profile="CBC-THUMBNAIL-3X" width="672" height="378" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9df1ce0/CBC_BEING_ERICA_SEASON_01_S01E13_DEL1524631295833_poster_1920x1080.jpg" profile="CBC-POSTER-2X" width="0" height="0" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9df1ce0/CBC_BEING_ERICA_SEASON_01_S01E13-v1-18459112.jpg" profile="CBC-THUMBNAIL-2X" width="448" height="252" />
+        <media:thumbnail url="https://i.watch.cbc.ca/p/38e815a-009d9df1ce0/CBC_BEING_ERICA_SEASON_01_S01E13-v1-18459109.jpg" profile="CBC-POSTER-1X" width="960" height="540" />
+      </media:group>
+      <link>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-009d9df1ce0</link>
+      <clearleap:parentFolderUri>https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentFolderUri>
+      <clearleap:parentGuid>9536e9fb-84f4-4637-afa3-3500b05f3dc3</clearleap:parentGuid>
+      <clearleap:cuePoints>
+        <clearleap:cuePoint type="end_credits">2617000</clearleap:cuePoint>
+      </clearleap:cuePoints>
+    </item>
+  </channel>
+</rss>
+
+---------------------------------------- notes:
+
+* regex to extract a URL for each episode in the particular season; each response will contain a URL for the individual HLS stream (after removing CR/LF):
+    /^.*?<media:content url=['"]([^'"]+)['"].*$/g
+
+-------------------------------------------------------------------------------- VOD: metadata for episode in series
 
 https://gem.cbc.ca/media/being-erica/season-2/episode-1/38e815a-00ad0e90d45
-
---------------------------------------------------------------------------------
 
 https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-00ad0e90d45?max=20&offset=0
 
@@ -84,10 +759,10 @@ https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/38e815a-00ad0e
 
 ---------------------------------------- notes:
 
-* regex to extract URL that will contain HLS stream (after removing CR/LF):
+* regex to extract a URL for the particular episode; response will contain a URL for the HLS stream (after removing CR/LF):
     /^.*?<media:content url=['"]([^'"]+)['"].*$/
 
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------- VOD: video stream for episode in series
 
 https://api-cbc.cloud.clearleap.com/cloffice/client/web/play/?contentId=c27a9b06-f909-4dca-80bd-cde942f0b968&categoryId=2b1aed29-a789-4284-b012-f33307c7aaf7
 

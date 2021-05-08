@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CBC Gem
 // @description  Watch videos in external player.
-// @version      2.0.1
+// @version      2.0.2
 // @match        *://gem.cbc.ca/*
 // @match        *://*.gem.cbc.ca/*
 // @icon         https://gem.cbc.ca/favicon.png
@@ -155,9 +155,9 @@ var download_text = function(url, headers, callback) {
   xhr.send()
 }
 
-// ----------------------------------------------------------------------------- process video page
+// ----------------------------------------------------------------------------- process VOD video page
 
-var process_video_page = function(page_id) {
+var process_vod_video_page = function(page_id) {
   var url_browse      = 'https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/' + page_id + '?max=20&offset=0'
   var headers_browse  = null
   var callback_browse = function(xml_browse) {
@@ -193,6 +193,26 @@ var process_video_page = function(page_id) {
   }
 
   download_text(url_browse, headers_browse, callback_browse)
+}
+
+// ----------------------------------------------------------------------------- process live video page
+
+var process_live_video_page = function(page_id) {
+  // to do..
+}
+
+// ----------------------------------------------------------------------------- process video page
+
+var process_video_page = function(pathname, page_id) {
+  if (pathname.indexOf('/media/') === 0) {
+    process_vod_video_page(page_id)
+    return true
+  }
+  if (pathname.indexOf('/live/') === 0) {
+    process_live_video_page(page_id)
+    return true
+  }
+  return false
 }
 
 // ----------------------------------------------------------------------------- process login page
@@ -246,12 +266,12 @@ var init_login_page = function() {
 
 var init_video_page = function() {
   var pathname = unsafeWindow.location.pathname
-  if (!pathname) return
+  if (!pathname) return false
 
   var page_id = pathname.substr(pathname.lastIndexOf('/') + 1)
-  if (!page_id) return
+  if (!page_id) return false
 
-  process_video_page(page_id)
+  return process_video_page(pathname, page_id)
 }
 
 var init = function() {
