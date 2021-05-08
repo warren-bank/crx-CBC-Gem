@@ -1,0 +1,821 @@
+-------------------------------------------------------------------------------- live stream
+
+https://gem.cbc.ca/live/939944003798
+
+https://api-cbc.cloud.clearleap.com/cloffice/V4/client/web/browse/939944003798?max=20&offset=0
+
+---------------------------------------- response:
+// filtered through xml pretty printer:
+//   https://riversun.github.io/xml-beautify/index.html
+
+<result>
+  <errorCode>CL2000</errorCode>
+  <status>failure</status>
+  <userMessage>We are sorry, but the selected video is currently unavailable.</userMessage>
+  <systemMessage>Asset doesn’t exist</systemMessage>
+</result>
+
+---------------------------------------- notes:
+
+* no joy: by attempting to obtain metadata from the same API endpoint as is used by VOD
+
+-------------------------------------------------------------------------------- live stream
+
+https://gem.cbc.ca/public/js/main.js
+  t.LLC_URL=r+"//tpfeed.cbc.ca/f/ExhSPC/t_t3UKJR6MAT?pretty=true&sort=pubDate%7Cdesc"
+
+https://tpfeed.cbc.ca/f/ExhSPC/t_t3UKJR6MAT?pretty=true&sort=pubDate%7Cdesc
+
+---------------------------------------- response:
+
+{
+    "$xmlns": {
+        "cbc": "http://xml.cbc.ca/field"
+    },
+    "startIndex": 1,
+    "itemsPerPage": 100,
+    "entryCount": 16,
+    "title": "OTT Live Linear- PROD",
+    "description": "This feed drives the OTT Live Linear 24x7 feeds",
+    "author": "CBC",
+    "entries": [
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1840832579730",
+            "guid": "939949635618",
+            "updated": 1620369800000,
+            "title": "CBC News Network",
+            "description": "CBC News Network showcases the best of CBC journalism, covering breaking stories with speed, and adding context and meaning along the way. CBC News Network is also the destination for original journalism, with added depth from CBC News bureaus across the country and around the world.",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/NewsNetwork",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "news, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/exrQ_PCyrRAw/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/news/shows/newsnet",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "NN",
+            "cbc$contentArea": "News",
+            "cbc$gracenoteChannelID": "75971",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": true,
+            "cbc$liveOndemand": "Live",
+            "cbc$mediaPublisherName": "cbc",
+            "cbc$originalDepartment": "",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Canada",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/674/2/CBCGem_MPXThumbnail_CBCNN_3840x2160.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1767198275749",
+            "guid": "1730840131842",
+            "updated": 1620369829000,
+            "title": "Olympic Channel",
+            "description": "Olympic Channel is a 24-hour digital livestream with up-close access to the greatest moments from Olympic sports.",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "",
+            "countries": [
+                "CA"
+            ],
+            "excludeCountries": false,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/Vb0PLWi42II9/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "none",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "OC",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "",
+            "cbc$isDai": "no",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/428/730/OCS_LOGO.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$mediaPublisherName": "cbc",
+            "cbc$mediaPublisherType": "third party",
+            "cbc$originalDepartment": "",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "(not specified)",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/428/730/OCS_LOGO.jpg",
+            "cbc$subtitles": "No",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106060355894",
+            "guid": "929171523824",
+            "updated": 1620369800000,
+            "title": "St. John's",
+            "description": "The live TV channel and local programming from St. John's",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/St John's",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "st john's, newfoundland, labrador, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/bMYIu_gluuPW/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/stjohns",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBNT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72797",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBNT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Newfoundland",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/StJohns_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106060355900",
+            "guid": "939944003798",
+            "updated": 1620369800000,
+            "title": "Toronto",
+            "description": "The live TV channel and local programming from Toronto",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Toronto",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "toronto, ontario, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/vq4XKUmS9vec/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/toronto",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBLT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "46245",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBLT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Toronto",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Toronto_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106059331823",
+            "guid": "939944003611",
+            "updated": 1620369801000,
+            "title": "Vancouver",
+            "description": "The live TV channel and local programming from Vancouver",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Vancouver",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "vancouver, british columbia, bc, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/e3_ajV7ZIxMm/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/vancouver",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBUT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "51981",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBUT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "British Columbia",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Vancouver_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106061891996",
+            "guid": "939943491709",
+            "updated": 1620369801000,
+            "title": "Edmonton",
+            "description": "The live TV channel and local programming from Edmonton",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Edmonton",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "edmonton, alberta, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/zfuOObGGfoxP/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/edmonton",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBXT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "71733",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBXT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": true,
+            "cbc$ottPromoted": true,
+            "cbc$region": "Alberta",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Edmonton_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106061891990",
+            "guid": "939938884002",
+            "updated": 1620369800000,
+            "title": "Calgary",
+            "description": "The live TV channel and local programming from Calgary",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Calgary",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "calgary, alberta, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/xmimW82qiZCT/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/calgary",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBRT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "71729",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBRT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Alberta",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Calgary_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106060355895",
+            "guid": "939937347698",
+            "updated": 1620369800000,
+            "title": "Regina",
+            "description": "The live TV channel and local programming from Regina",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Regina",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "regina, saskatchewan, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/25B_a9K3xUMt/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/regina",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBKT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72795",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBKT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": true,
+            "cbc$ottPromoted": true,
+            "cbc$region": "Saskatchewan",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Regina_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106063427545",
+            "guid": "939932739734",
+            "updated": 1620369800000,
+            "title": "Winnipeg",
+            "description": "The live TV channel and local programming from Winnipeg",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Winnipeg",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "winnipeg, manitoba, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/D6RSfOg4hF8J/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/winnipeg",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBWT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72940",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBWT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Manitoba",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Winnipeg_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106061891993",
+            "guid": "939929667586",
+            "updated": 1620369801000,
+            "title": "Yellowknife",
+            "description": "The live TV channel and local programming from Yellowknife",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Yellowknife",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "yellowknife, yukon, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/ShvyhN_s_Fka/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/yellowknife",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CFYK",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72816",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CFYK_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "North",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Yellowknife_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106063427539",
+            "guid": "939921987641",
+            "updated": 1620369800000,
+            "title": "Windsor",
+            "description": "The live TV channel and local programming from Windsor",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Windsor",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "Windsor, ontario, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/V9PvOjrmDSzh/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/windsor",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBET",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72772",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBET_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Windsor",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Windsor_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106059331822",
+            "guid": "939911235579",
+            "updated": 1620369801000,
+            "title": "Halifax",
+            "description": "The live TV channel and local programming from Halifax",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Halifax",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "halifax, nova scotia, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/BuLAvd5sBoBd/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/halifax",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBHT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72723",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBHT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Nova Scotia",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Halifax_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106060355906",
+            "guid": "939908163619",
+            "updated": 1620369800000,
+            "title": "Fredericton",
+            "description": "The live TV channel and local programming from Fredericton",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Fredericton",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "fredericton, nb, new brunswick, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/CyQLE21fzNQl/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/fredericton",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBAT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "16261",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBAT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "New Brunswick",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Fredericton_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106060355893",
+            "guid": "939761219948",
+            "updated": 1620369800000,
+            "title": "Charlottetown",
+            "description": "The live TV channel and local programming from Charlottetown",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Charlottetown",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "charlottetown, pei, prince edward island, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/9nsSEnd7e9_W/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "none",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBCT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "72884",
+            "cbc$isDai": "no",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBCT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Prince Edward Island",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Charlottetown_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106060355901",
+            "guid": "929200707699",
+            "updated": 1620369800000,
+            "title": "Montreal",
+            "description": "The live TV channel and local programming from Montreal",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Montreal",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "montreal, quebec, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/OgAJaPCG4Zi1/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/montreal",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBMT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "53502",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBMT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Montreal",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Montreal_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        },
+        {
+            "id": "http://data.media.theplatform.com/media/data/Media/1106059331821",
+            "guid": "920604739687",
+            "updated": 1620369801000,
+            "title": "Ottawa",
+            "description": "The live TV channel and local programming from Ottawa",
+            "categories": [
+                {
+                    "name": "OTT",
+                    "scheme": "",
+                    "label": ""
+                },
+                {
+                    "name": "OTT/Ottawa",
+                    "scheme": "",
+                    "label": ""
+                }
+            ],
+            "keywords": "ottawa, ontario, live",
+            "countries": [
+                
+            ],
+            "excludeCountries": true,
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/AyqZwxRqh8EH/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ],
+            "cbc$adOrder": "live/ottawa",
+            "cbc$audioVideo": "Video",
+            "cbc$callSign": "CBOT",
+            "cbc$contentArea": "OTT",
+            "cbc$gracenoteChannelID": "58494",
+            "cbc$isDai": "yes",
+            "cbc$isPremium": false,
+            "cbc$liveImage": "https://thumbnails.cbc.ca/ott-channel/CBC_CBOT_Thumbnail.jpg",
+            "cbc$liveOndemand": "Live",
+            "cbc$ottCarousel": false,
+            "cbc$ottPromoted": false,
+            "cbc$region": "Ottawa",
+            "cbc$staticImage": "https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Ottawa_2880x1620.jpg",
+            "cbc$subtitles": "Yes",
+            "cbc$type": "Channel"
+        }
+    ]
+}
+
+---------------------------------------- notes:
+
+        {
+            "guid": "939944003798",
+            "title": "Toronto",
+            "description": "The live TV channel and local programming from Toronto",
+            "content": [
+                {
+                    "url": "https://link.theplatform.com/s/ExhSPC/vq4XKUmS9vec/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true"
+                }
+            ]
+        }
+
+--------------------------------------------------------------------------------
+
+https://link.theplatform.com/s/ExhSPC/vq4XKUmS9vec/meta.smil?feed=OTT%20Live%20Linear-%20PROD&manifest=m3u&format=smil&mbr=true
+
+---------------------------------------- response:
+
+<smil xmlns="http://www.w3.org/2005/SMIL21/Language">
+<head>
+</head>
+<body>
+<seq>
+	<video src="https://cbclivedai1-i.akamaihd.net/hls/live/566940/event2/CBLT/master.m3u8?hdnea=ip=198.8.85.213~st=1620466563~exp=1620466953~acl=/*~id=b320fb21-f09b-4719-aac3-9d892e3fb30c~hmac=9145bacf63d1599041515d7a811ca6840f97f3da1302ed4d3a3f6671ada47fc0" title="Toronto" author="CBC" abstract="The live TV channel and local programming from Toronto" copyright="CBC Production" guid="939944003798" categories="OTT,OTT/Toronto" keywords="toronto, ontario, live" provider="CBC OTT VMS" type="application/x-mpegURL" expression="nonstop">
+		<param name="adCategoryExclusion" value=""/>
+		<param name="adOrder" value="live/toronto"/>
+		<param name="adSite" value=""/>
+		<param name="aired" value="true"/>
+		<param name="allTime" value="0"/>
+		<param name="assetKey" value="HSaCVc4WR7-_jJUt1CibHQ"/>
+		<param name="audioVideo" value="Video"/>
+		<param name="availableInMobile" value="true"/>
+		<param name="blockToPolopoly" value="no"/>
+		<param name="callSign" value="CBLT"/>
+		<param name="contentArea" value="OTT"/>
+		<param name="dayPlayCount" value="0"/>
+		<param name="environmentPublishingTargets" value="PROD"/>
+		<param name="genre" value=""/>
+		<param name="gracenoteChannelID" value="46245"/>
+		<param name="isDai" value="yes"/>
+		<param name="isPremium" value="false"/>
+		<param name="last30Days" value="0"/>
+		<param name="last7Days" value="0"/>
+		<param name="lastDay" value="0"/>
+		<param name="liveDisplayCategory" value="Channel"/>
+		<param name="liveImage" value="https://thumbnails.cbc.ca/ott-channel/CBC_CBLT_Thumbnail.jpg"/>
+		<param name="liveOndemand" value="Live"/>
+		<param name="mediaDuration" value="0"/>
+		<param name="ottCarousel" value="false"/>
+		<param name="ottPromoted" value="false"/>
+		<param name="podcastShow" value=""/>
+		<param name="private" value="no"/>
+		<param name="region" value="Toronto"/>
+		<param name="shareable" value="Yes"/>
+		<param name="show" value="(not specified)"/>
+		<param name="sport" value="(not specified)"/>
+		<param name="sportGroup" value="(not specified)"/>
+		<param name="staticImage" value="https://thumbnails.cbc.ca/maven_legacy/thumbnails/CBC_OTT_VMS/Live_Channel_Static_Images/Toronto_2880x1620.jpg"/>
+		<param name="subtitles" value="Yes"/>
+		<param name="syndicate" value="Yes"/>
+		<param name="type" value="Channel"/>
+		<param name="unapprovedDate" value="2524626000000"/>
+	</video>
+</seq>
+</body>
+</smil>
+
+---------------------------------------- notes:
+
+* regex to extract HLS stream (after removing CR/LF):
+    /^.*?<video [^>]*src=['"]([^'"]+)['"].*$/
+
+--------------------------------------------------------------------------------

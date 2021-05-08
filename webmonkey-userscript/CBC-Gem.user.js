@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CBC Gem
 // @description  Watch videos in external player.
-// @version      2.0.2
+// @version      2.0.3
 // @match        *://gem.cbc.ca/*
 // @match        *://*.gem.cbc.ca/*
 // @icon         https://gem.cbc.ca/favicon.png
@@ -198,7 +198,73 @@ var process_vod_video_page = function(page_id) {
 // ----------------------------------------------------------------------------- process live video page
 
 var process_live_video_page = function(page_id) {
-  // to do..
+  var url_mainjs      = 'https://gem.cbc.ca/public/js/main.js'
+  var headers_mainjs  = null
+  var callback_mainjs = function(txt_mainjs) {
+    if (!txt_mainjs) return
+    txt_mainjs = txt_mainjs.replace(/[\t\r\n]+/g, ' ')
+
+    var regex_mainjs = /^.*LLC_URL=[^'"]{0,5}['"]([^'"]+)['"].*$/
+    if (!regex_mainjs.test(txt_mainjs)) return
+
+    var url_llc = txt_mainjs.replace(regex_mainjs, '$1')
+    if (url_llc.indexOf('//') === 0)
+      url_llc = unsafeWindow.location.protocol + url_llc
+
+    var headers_llc  = null
+    var callback_llc = function(json_llc) {
+      if (!json_llc) return
+
+      try {
+        json_llc = JSON.parse(json_llc)
+      }
+      catch(error) {}
+
+      if (!json_llc || ('object' !== (typeof json_llc)) || !Array.isArray(json_llc.entries) || !json_llc.entries.length) return
+
+      var obj, entry
+      for (var i=0; i < json_llc.entries.length; i++) {
+        obj = json_llc.entries[i]
+
+        if (obj && ('object' === (typeof obj)) && (obj.guid === page_id) && Array.isArray(obj.content) && obj.content.length) {
+          entry = obj
+          break
+        }
+      }
+      obj = null
+      if (!entry) return
+
+      var url_content
+      for (var i=0; i < entry.content.length; i++) {
+        obj = entry.content[i]
+
+        if (obj && ('object' === (typeof obj)) && obj.url) {
+          url_content = obj.url
+          break
+        }
+      }
+      obj = null
+      if (!url_content) return
+
+      var headers_content  = null
+      var callback_content = function(smil_content) {
+        if (!smil_content) return
+        smil_content = smil_content.replace(/[\t\r\n]+/g, ' ')
+
+        var regex_content = /^.*?<video [^>]*src=['"]([^'"]+)['"].*$/
+        if (!regex_content.test(smil_content)) return
+
+        var hls_url = smil_content.replace(regex_content, '$1')
+        process_hls_url(hls_url)
+      }
+
+      download_text(url_content, headers_content, callback_content)
+    }
+
+    download_text(url_llc, headers_llc, callback_llc)
+  }
+
+  download_text(url_mainjs, headers_mainjs, callback_mainjs)
 }
 
 // ----------------------------------------------------------------------------- process video page
